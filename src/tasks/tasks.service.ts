@@ -10,7 +10,10 @@ export class TasksService {
     return this.tasks;
   }
 
+  //Alt method
+  // createTask(createTaskDTO: CreateTaskDTO): Task {
   createTask(title: string, description: string): Task {
+    //const {title, description} = createTaskDTO
     const task: Task = {
       id: uuid(),
       title: title,
